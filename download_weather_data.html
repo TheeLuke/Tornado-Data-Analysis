@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Data Download</title>
+    </head>
+<body>
+<script>
+window.onload = function() {
+  // Create a link element
+  var link = document.createElement('a');
+  link.setAttribute('href', 'daily_weather.parquet'); // Replace 'path/to/your/file.pdf' with the actual path to your file
+  link.setAttribute('download', 'daily_weather.parquet'); // Name for the downloaded file
+  link.style.display = 'none'; // Hide the link
+  document.body.appendChild(link); // Append the link to the body
+
+  // Trigger the click event on the link
+  link.click();
+
+  // Clean up
+  document.body.removeChild(link);
+};
+</script>
+
+<h1>The Weather Dataset</h1>
+<p>This page is used to download the "weather_data.parquet" file stored in <b>The Weather Dataset</b> set from Kaggle.</p>
+<p>Dataset can be found <a href="https://www.kaggle.com/datasets/guillemservera/global-daily-climate-data/data?select=cities.csv">here</a>.</p>
+<br>
+<h3>Your download should start automatically.</h3>
+<p>If download does not start, try reloading the page.</p>
+</body>
+</html>
