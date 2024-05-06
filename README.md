@@ -6,7 +6,7 @@ Data analysis exploration into the effects of weather that contribute to tornado
 ### Datasets
 1. [US Tornado Dataset](https://www.kaggle.com/datasets/danbraswell/us-tornado-dataset-1950-2021?resource=download">https://www.kaggle.com/datasets/danbraswell/us-tornado-dataset-1950-2021)
 
-Derived from a dataset produced by the National Oceanic and Atmospheric Administration (NOAA) Storm Prediction Center. This dataset contained important tornado information such as the length, width, injuries, fatalities, and magnitude.
+Derived from a dataset produced by the National Oceanic and Atmospheric Administration (NOAA) Storm Prediction Center. This dataset contained important tornado information such as the length, width, injuries, fatalities, and magnitude. It is a CSV file that contains roughly 70,000 rows and 15 columns *(Can be found in the notebook file)*. 
 
 The magnitude follows the **Enhanced Fujita Scale (EF)**. A tornado's destructiveness or magnitude is derived largely from the wind speed within it. Meteorologists use this Enhanced Fujita Scale since 2007 to rate tornadoes based on wind speed.
 
@@ -22,19 +22,15 @@ The magnitude follows the **Enhanced Fujita Scale (EF)**. A tornado's destructiv
 
 2. [The Weather Dataset](https://www.kaggle.com/datasets/guillemservera/global-daily-climate-data/data?select=cities.csv)
    
-Daily weather readings from major cities across the world received from central weather stations. This dataset contained valuable information regarding weather information on every single day in various states. The dataset included data such as precipitation, wind speed, temperature, and sunshine levels.
+Daily weather readings from major cities across the world received from central weather stations. This dataset contained valuable information regarding weather information on every single day in various states. The dataset included data such as precipitation, wind speed, temperature, and sunshine levels. It has about 30 million rows of weather data, as well as more in countries and city CSVs. The weather data is stored in a parquet file.
 
-## Research Question
+## Research Questions
 1. Is there a correlation between annual rainfall levels and tornado frequency within states?
+2. Can we predict the severity (magnitude, length, width) of tornadoes based on weather conditions?
 
 ## How to use
-Instructions on how to use this repository both for viewing presentations and using the code.
-### Viewing presentation and analysis
-1. Downlod the latest release contain the code files.
-2. Open "Tornado Data Analysis Presentation.pptx" to see final presentation on data analysis process.
-3. Alternatevely, The notebook file can be opened in GitHub or downloaded to see visualizations.
+Instructions on how to use this repository for further analysis:
 
-### Using data and code analysis
-1. Download the latest release containing the Python notebook, CSVs, and HTML download file.
-2. Open the download_weather_data.html to download the weather_data.parquet file.
+1. Download the latest release containing the Python notebook and CSVs.
+2. Go to [The Weather Dataset](https://www.kaggle.com/datasets/guillemservera/global-daily-climate-data/data?select=cities.csv) to download the weather_data.parquet file since it is too large to store in GitHub.
 3. Open the notebook in a notebook editor and run the code blocks to see analysis.
