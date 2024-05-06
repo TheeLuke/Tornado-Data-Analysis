@@ -31,6 +31,6 @@ Daily weather readings from major cities across the world received from central 
 ## How to use
 Instructions on how to use this repository for further analysis:
 
-1. Download the latest release containing the Python notebook and CSVs.
-2. Go to [The Weather Dataset](https://www.kaggle.com/datasets/guillemservera/global-daily-climate-data/data?select=cities.csv) to download the weather_data.parquet file since it is too large to store in GitHub.
-3. Open the notebook in a notebook editor and run the code blocks to see analysis.
+1. Download the latest release containing the Python notebook, CSVs and parquet file in a zip.
+2. Extract the zip file. 
+3. Open the notebook file inside the folder titled, "Tornado Machine Learning.ipynb".
